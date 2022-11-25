@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM Serif Display:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400;500;700;800;900;1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f2f0;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Navbar */
+nav {
+  padding: 2% 5% 2% 5%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  right: 2%;
+  left: 0%;
+}
+
+nav img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.menuBar {
+  display: none;
+}
+.navLink {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.navLink a {
+  font-family: "poppins", "san-serif";
+  color: #929191;
+  text-decoration: none !important;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.navLink a:hover {
+  color: #000;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.heroImage {
+  width: 30%;
+  height: 100vh;
+  object-fit: cover;
+  background: #ffffff;
+  background: linear-gradient(191deg, #ffffff 10%, transparent 20%),
+    url("images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rightHero {
+  width: 70%;
+  margin-top: 6%;
+}
+
+/* HERO HEADING */
+.hero {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  justify-content: flex-end;
+  column-gap: 50px;
+  width: 100%;
+}
+
+.heading {
+  font-size: 55px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.firstHeading {
+  margin-right: 30%;
+  font-family: "Martel";
+  -webkit-text-stroke: 1px #a4a2a1;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.secondHeading {
+  line-height: 20px;
+  color: #333333;
+  font-family: "Martel";
+  font-weight: 900;
+}
+
+.textParttwo {
+  width: 15%;
+  font-weight: 500;
+  margin-bottom: 2%;
+  line-height: 30px;
+  color: #949393;
+  font-family: "Martel";
+  font-size: 22px;
+  align-self: flex-end;
+}
+
+.socialIcons {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10%;
+}
+
+.hero ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 40px;
+  font-size: larger;
+}
+
+.twitterIcon {
+  padding-top: 1rem;
+}
+
+.buttomBelowHero {
+  margin: 2% 10% 5% 0%;
+}
+
+.buttomBelowHero button {
+  float: right;
+  padding: 1% 4%;
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.secondHero {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  justify-content: space-between;
+  align-content: center;
+}
+.leftSide-secondHero {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  margin-left: -5%;
+}
+
+.rightSide-secondHero {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 8%;
+}
+
+.imgDanceBox {
+  width: 100%;
+  margin-top: 2%;
+}
+.rightSide-secondHero img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+.imageArrowFlex {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0px;
+}
+
+.arrowDown {
+  margin-top: -2%;
+  width: 20%;
+  font-size: 100px;
+  color: #424242;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quoteIcon {
+  color: #333333;
+  font-size: 40px;
+  font-weight: 900;
+}
+.rightSide-secondHero p {
+  font-family: "poppins", "san-serif";
+  font-weight: 500;
+  width: 32rem;
+  font-size: 1.2vw;
+}
+
+.secondHero ul {
+  font-family: "poppins", "san-serif";
+  color: #aeadad;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+
+.secondHero .liBold {
+  color: #333333;
+}
+.secondHero ul:before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  background: #aeadad;
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  height: calc(100% - 10px);
+}
+.secondHero ul li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10%;
+}
+.secondHero ul li:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #828282;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 10px;
+}
+
+.secondHero ul .liBold:before {
+  background: #333333;
+  width: 10px;
+  height: 10px;
+}
+
+@media only screen and (max-width: 1270px) {
+  .heading {
+    font-size: 3.5vw;
+  }
+
+  .secondHero {
+    gap: 20px;
+  }
+
+  .imageArrowFlex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navLink a {
+    font-size: 1.5vw;
+  }
+
+  .navLink {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .textLine {
+    font-size: 2vw;
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .container {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: static;
+  }
+
+  .navLink {
+    display: none;
+  }
+
+  .logoMenu {
+    width: 95vw;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menuBar {
+    display: block;
+  }
+  .heroImage {
+    width: auto;
+    height: 500px;
+    object-fit: contain;
+    background-position: 40%;
+  }
+
+  .rightHero {
+    width: 100%;
+  }
+
+  .buttomBelowHero {
+    float: left;
+    padding-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .secondHero {
+    flex-direction: column;
+  }
+
+  .socialIcons {
+    width: auto;
+
+    align-items: center;
+  }
+  .hero ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading {
+    width: auto;
+    align-items: flex-start;
+  }
+
+  .firstHeading,
+  .secondHeading {
+    font-size: 20vw;
+  }
+
+  .textParttwo {
+    width: auto;
+  }
+
+  .textParttwo {
+    margin-bottom: 8%;
+    padding-top: 10%;
+  }
+
+  .twitterIcon {
+    padding-top: 0;
+  }
+
+  .buttomBelowHero {
+    width: auto;
+    float: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .leftSide-secondHero {
+    margin-top: 2rem;
+    width: auto;
+    justify-content: center;
+  }
+  .secondHero ul {
+    font-size: 5.2vw;
+  }
+
+  .rightSide-secondHero {
+    width: auto;
+    margin: 2%;
+  }
+}
